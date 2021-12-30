@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import Home from './components/pages/HomePage/Home';
-import Services from './components/pages/Services/Services';
-import Products from './components/pages/Products/Products';
+import About from './components/pages/About/About';
+import Error from './components/pages/Error/Error';
 import PuppyBios from './components/pages/PuppyBios/PuppyBios';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -14,9 +14,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/products' element={<Products />} />
-        <Route path='/sign-up' element={<PuppyBios />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/puppies' element={<PuppyBios />} />
+        <Route path='*' exact={true} element={<Error />} />
       </Routes>
       <Footer />
     </Router>

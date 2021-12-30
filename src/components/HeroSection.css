@@ -1,10 +1,16 @@
 .home__hero-section {
-  color: #fff;
+  color: #457b9d;
   padding: 160px 0;
 }
 
 .home__hero-row {
   align-items: center;
+}
+
+.sliderimg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 .row {
@@ -42,7 +48,7 @@
 }
 
 .not-available {
-  color: #f00946;
+  color: #e63946;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -56,15 +62,15 @@
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: #f7f8fa;
+  color: #1d3557;
 }
 
 .dark {
-  color: #1c2237;
+  color: #f4f4f4;
 }
 
 .darkBg {
-  background-color: #1c2237;
+  background-color: #f4f4f4;
 }
 
 .home__hero-subtitle {

@@ -50,38 +50,30 @@ function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  to='/services'
+                  to='/puppies'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  Services
+                  Puppies
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link
-                  to='/products'
+                  to='/about'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  Products
+                  About
                 </Link>
               </li>
-              <li className='nav-btn'>
-                {button ? (
-                  <Link to='/sign-up' className='btn-link'>
-                    <Button buttonStyle='btn--outline'>SIGN UP</Button>
-                  </Link>
-                ) : (
-                  <Link to='/sign-up' className='btn-link'>
-                    <Button
-                      buttonStyle='btn--outline'
-                      buttonSize='btn--mobile'
-                      onClick={closeMobileMenu}
-                    >
-                      SIGN UP
-                    </Button>
-                  </Link>
-                )}
+              <li className='nav-item'>
+                <Link
+                  to='/contact'
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

@@ -3,13 +3,20 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   available: 'Exclusive Access',
+  home: true,
   headline: 'North Country Cockers',
   description:
     'Family raised purebred Cocker Spaniels',
   buttonLabel: 'Meet the puppies',
   imgStart: '',
   img: 'images/cp_puppies.jpeg',
-  alt: 'Credit Card'
+  alt: 'Credit Card',
+  data: [
+    <img src="images/dog01.jpeg" className="sliderimg"/>,
+    <img src="images/cp_puppies.jpeg" className="sliderimg"/>,
+    <img src="images/dog01.jpeg" className="sliderimg"/>,
+    <img src="images/cp_puppies.jpeg" className="sliderimg"/>
+  ]
 };
 
 export const homeObjTwo = {

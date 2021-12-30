@@ -2,9 +2,13 @@ import React from 'react';
 import './HeroSection.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 function HeroSection({
   lightBg,
+  home,
   available,
   lightText,
   lightTextDesc,
@@ -13,8 +17,10 @@ function HeroSection({
   buttonLabel,
   img,
   alt,
-  imgStart
+  imgStart,
+  data
 }) {
+
   return (
     <>
       <div
@@ -30,7 +36,10 @@ function HeroSection({
           >
             <div className='col'>
               <div className='home__hero-text-wrapper'>
-                <div className={available ? 'available' : 'not-available'}>{available ? 'Available' : 'Not available'}</div>
+                {!home ? 
+                  <div className={available ? 'available' : 'not-available'}>{available ? 'Available' : 'Not available'}</div>
+                  : null
+                }
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
                 </h1>
@@ -43,16 +52,28 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                <Link to='/sign-up'>
-                  <Button buttonSize='btn--wide' buttonColor='blue'>
-                    {buttonLabel}
-                  </Button>
-                </Link>
+                { available ?
+                  <Link to='/puppies'>
+                    <Button buttonSize='btn--wide' buttonColor='red'>
+                      {buttonLabel}
+                    </Button>
+                  </Link>
+                  : null
+                }
               </div>
             </div>
             <div className='col'>
               <div className='home__hero-img-wrapper'>
-                <img src={img} alt={alt} className='home__hero-img' />
+                <AliceCarousel 
+                  items={data}
+                  responsive={true}
+                  autoPlayInterval={4000}
+                  autoPlayDirection="ltr"
+                  autoPlay={true}
+                  infinite={true}
+                  fadeOutAnimation={true}
+                  disableAutoPlayOnAction={true}
+                />
               </div>
             </div>
           </div>
