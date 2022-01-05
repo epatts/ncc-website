@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from '../../HeroSection';
+import PuppyBio from '../PuppyBios/HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import Pricing from '../../Pricing';
 
@@ -7,8 +7,8 @@ function Puppies() {
   return (
     <>
       <Pricing />
-      <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjThree} />
+      <PuppyBio {...homeObjOne} />
+      <PuppyBio {...homeObjThree} />
     </>
   );
 }

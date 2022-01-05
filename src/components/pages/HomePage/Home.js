@@ -1,11 +1,11 @@
 import React from 'react';
-import HeroSection from '../../HeroSection';
+import PuppyBio from '../PuppyBios/HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 
 function Home() {
   return (
     <>
-      <HeroSection {...homeObjOne} />
+      <PuppyBio {...homeObjOne} />
       {/* <HeroSection {...homeObjThree} />
       <HeroSection {...homeObjTwo} />
       <Pricing />

@@ -1,15 +1,20 @@
 import React from 'react';
-import HeroSection from '../../HeroSection';
-import { puppy1, homeObjTwo, puppy2, homeObjFour } from './Data';
-import Pricing from '../../Pricing';
+import PuppyBio from './HeroSection';
+import { puppies } from './Data';
 
-function PuppyBios() {
-  return (
+const PuppyBios = () => (
+
     <>
-      <HeroSection {...puppy1} />
-      <HeroSection {...puppy2} />
+      {puppies.map(puppy => (
+        puppy.available == true ? <PuppyBio puppy={puppy} />
+        : null
+      ))}
+      {puppies.map(puppy => (
+        puppy.available == false ? <PuppyBio puppy={puppy} />
+        : null
+      ))}
     </>
   );
-}
+
 
 export default PuppyBios;
