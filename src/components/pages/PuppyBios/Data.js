@@ -18,6 +18,20 @@ export const puppies =
         <img src="images/cp_puppies.jpeg" className="sliderimg"/>,
         <img src="images/dog01.jpeg" className="sliderimg"/>,
         <img src="images/cp_puppies.jpeg" className="sliderimg"/>
+      ],
+      images: [
+        {
+          url: "images/dog01.jpeg",
+          title: "dog"
+        },
+        {
+          url: "images/cp_puppies.jpeg",
+          title: "dog"
+        },
+        {
+          url: "images/old_style_bio_reference.png",
+          title: "dog"
+        }
       ]
     },
     {
@@ -36,6 +50,20 @@ export const puppies =
       data: [
         <img src="images/dog01.jpeg" className="sliderimg"/>,
         <img src="images/cp_puppies.jpeg" className="sliderimg"/>
+      ],
+      images: [
+        {
+          url: "images/dog01.jpeg",
+          title: "dog"
+        },
+        {
+          url: "images/cp_puppies.jpeg",
+          title: "dog"
+        },
+        {
+          url: "images/old_style_bio_reference.png",
+          title: "dog"
+        }
       ]
     },
     {
@@ -54,6 +82,20 @@ export const puppies =
       data: [
         <img src="images/dog01.jpeg" className="sliderimg"/>,
         <img src="images/cp_puppies.jpeg" className="sliderimg"/>
+      ],
+      images: [
+        {
+          url: "images/dog01.jpeg",
+          title: "dog"
+        },
+        {
+          url: "images/cp_puppies.jpeg",
+          title: "dog"
+        },
+        {
+          url: "images/old_style_bio_reference.png",
+          title: "dog"
+        }
       ]
     }
   ]
